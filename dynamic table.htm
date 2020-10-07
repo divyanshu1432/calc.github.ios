@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> dynamic table </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<style>
+	
+	.tabel_write{
+		display: grid; place-items:center;
+	}
+
+	input{
+		text-align: center;
+	}
+
+</style>
+
+
+<body>
+
+<input  type="text" class="form-control" id="valuee" placeholder="write your digit here ">  <br>
+<button onclick="toggle()" class="btn btn-block btn-success"> click me to know the table </button>
+
+<div class="tabel_write">
+
+<h2 id="final_table">  </h2> </div>
+
+<script> 
+
+function toggle() {
+
+var a = parseInt(document.getElementById('valuee').value);
+
+//console.log(typeof(a))
+
+var b = a*1  ;
+var c =  a*2 ;
+var d = a*3 ;
+var e = a*4 ;
+var f = a*5 ;
+var g = a*6 ;
+var h = a*7 ;
+var i = a*8 ;
+var j = a*9 ;
+var k = a*10;
+
+
+
+var final_value  = (b + "<br>" + c + "<br> " + d + " <br>" + e + "<br> " + f + " <br>" + g + "<br> " + h + "<br> " +i + " <br>" + j + " <br>" + k  )
+
+document.getElementById('final_table').innerHTML = final_value; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+
+</body>
+</html>
